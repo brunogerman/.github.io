@@ -12,8 +12,20 @@
         background-image: url('fondo.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-opacity: 0.5;
+        background-position: center center;
+        background-size: cover;
         }
+#contenedor {
+    background-image: url('foto.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px 35px 25px 35px;
+    background-size: cover;
+
+
+}
 	</style>
 
 </head>
@@ -22,23 +34,33 @@
 <script>
 window.alert("Bienvenido. Gracias por su visita")
 </script>
+<script>
 
-<table style="page-break-before: never" width="100%" cellspacing="0" cellpadding="2">
+var fechaMod = 'Actualizado al ' + document.lastModified;
+
+  //print(fechaMod);
+
+</script>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var a = fso.CreateTextFile("/testfile.txt", true);
+a.WriteLine("This is a test.");
+a.Close();
+  </SCRIPT>
+
+<table style="page-break-before: never" width="100%" cellspacing="0" cellpadding="0">
 	<colgroup><col width="92*">
 
 	<col width="164*">
 
 	</colgroup><tbody><tr>
-		<td colspan="2" style="border: none; padding: 0cm" width="100%" valign="top"><p style="background: transparent" align="center">
-			<br>
 
-			</p>
-		</td>
-	</tr>
 	<tr>
-		<td colspan="2" style="border: none; padding: 0cm" width="100%" valign="top"><p align="center" style="font-style: normal; background: #729fcf; text-decoration: none" ">
-			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 36pt" size="7"><b>Bruno
-			Terraza</b></font></font></p>
+		<td  border="1" colspan="2" width="100%" valign="top" style="padding: 0cm" bgcolor="#729fcf"><p align="center">
+			<h1 style="background-color:#729fcf; font-family:Noto Sans ExtraCondensed Medium, sans-serif; font-size:36pt; color:black; text-shadow: 0 1px grey, 1px 0 grey; width:100%; text-align:center; line-height: 0em;">Bruno Terraza</h1>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -52,11 +74,7 @@ window.alert("Bienvenido. Gracias por su visita")
 		</td>
 	</tr>
 	<tr valign="top">
-		<td rowspan="3" style="border: none; padding: 0cm" width="36%"><p align="center"><br>
-
-<img src="thumb0.png" width="256" height="192" alt="Bruno Terraza">
-
-			</p>
+		<td rowspan="6" style="border: none; padding: 0cm" width="36%"><p align="center"><br><center><div id="contenedor"></div></center></p>
 		</td>
 		<td style="border: none; padding: 0cm" width="64%"><p align="center">
 			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 22pt" size="6">Téc.
@@ -71,18 +89,26 @@ window.alert("Bienvenido. Gracias por su visita")
 	</tr>
 	<tr valign="top">
 		<td style="border: none; padding: 0cm" width="64%"><p align="center">
-			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 22pt" size="6">0291-
-			4 40 40 48</font></font></p>
+			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 22pt" size="6"><a href="tel:+542914404048">+54 291 4 404048</a></font></font></p>
 		</td>
 	</tr>
 	<tr valign="top">
-		<td style="border: none; padding: 0cm" width="36%"><p><br>
-
-			</p>
-		</td>
 		<td style="border: none; padding: 0cm" width="64%"><p align="center">
-			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><a href="mailto:brunogerman.terraza@gmail.com">brunogerman.terraza@gmail.com</a><font style="font-size: 22pt" size="6"></font></font></p>
-                <script></script>
+			<font face="Noto Sans ExtraCondensed Medium, sans-serif"></font><a href="https://brunogerman.github.io/">https://brunogerman.github.io/</a><font style="font-size: 48pt" size="8"></font></p>
+      </td>
+	</tr>
+
+	<tr valign="top">
+			<td style="border: none; padding: 0cm" width="64%"><p align="center">
+			<font face="Noto Sans ExtraCondensed Medium, sans-serif"></font><a href="mailto:brunogerman.terraza@gmail.com">brunogerman.terraza@gmail.com</a><font style="font-size: 48pt" size="8"></font></p>
+              </td>
+	</tr>
+
+    <tr valign="top">
+		<td style="border: none; padding: 0cm" width="64%"><p align="center">
+			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 22pt" size="6"><a href="https://wa.me/5492914404048/?text=Hola Bruno!" target="_blank">
+    <img src="logo-wasap.png" width="50" height="50">
+ </a></font></font></p>
 		</td>
 	</tr>
 	<tr>
@@ -97,6 +123,49 @@ window.alert("Bienvenido. Gracias por su visita")
 
 
 	<tr>
+		<td colspan="2" style="border: none; padding: 0cm" width="100%" valign="top"><p align="left">
+			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 22pt" size="6">Formación</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border: none; padding: 0cm" width="100%" valign="top"><p style="background: #729fcf" align="left">
+			<br>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border: none; padding: 0cm" width="36%"><p style="margin-bottom: 0.5cm" align="center">
+			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 16pt" size="4">Técnico Aeronáutico</font></font></p>
+			<p align="center"><font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 12pt" size="3">2002 al 2007</font></font></p>
+		</td>
+		<td style="border: none; padding: 0cm" width="64%"><p align="left"><font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 12pt" size="3">Egresado en 2005 con mención a mejor promedio.</font></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border: none; padding: 0cm" width="36%"><p align="center">
+			<br>
+
+			</p>
+		</td>
+		<td style="border: none; padding: 0cm" width="64%"><p align="left"><br>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border: none; padding: 0cm" width="36%"><p style="margin-bottom: 0.5cm" align="center">
+			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 16pt" size="4">Operario de Pc</font></font></p>
+			<p align="center"><font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 12pt" size="3">1995</font></font></p>
+		</td>
+		<td style="border: none; padding: 0cm" width="64%"><p align="left"><font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 12pt" size="3">Operador de Pc, MS-DOS, Microsoft Windows, Microsoft Office</font></font></p>
+		</td>
+	</tr>
+
+
+
+
+<tr>
 		<td colspan="2" style="border: none; padding: 0cm" width="100%" valign="top"><p align="left">
 			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 22pt" size="6">Experiencias</font></font></p>
 		</td>
@@ -136,6 +205,54 @@ window.alert("Bienvenido. Gracias por su visita")
 		</td>
 	</tr>
 
+
+
+
+
+<tr>
+		<td colspan="2" style="border: none; padding: 0cm" width="100%" valign="top"><p align="left">
+			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 22pt" size="6">Experiencias</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border: none; padding: 0cm" width="100%" valign="top"><p style="background: #729fcf" align="left">
+			<br>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border: none; padding: 0cm" width="36%"><p style="margin-bottom: 0.5cm" align="center">
+			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 16pt" size="4">Cargo</font></font></p>
+			<p align="center"><font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 12pt" size="3">Fecha</font></font></p>
+		</td>
+		<td style="border: none; padding: 0cm" width="64%"><p align="left"><font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 12pt" size="3">Descripcion</font></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border: none; padding: 0cm" width="36%"><p align="center">
+			<br>
+
+			</p>
+		</td>
+		<td style="border: none; padding: 0cm" width="64%"><p align="left"><br>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border: none; padding: 0cm" width="36%"><p style="margin-bottom: 0.5cm" align="center">
+			<font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 16pt" size="4"><button onclick="printHTML()">Imprimir mi CV</button></font></font></p>
+			<p align="center"><font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 12pt" size="3">Fecha</font></font></p>
+		</td>
+		<td style="border: none; padding: 0cm" width="64%"><p align="left"><font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 12pt" size="3">Descripcion</font></font></p>
+		</td>
+	</tr>
+
+
+
+
+
 </tbody></table>
 
 <script>
@@ -145,18 +262,8 @@ var html = document.createElement('html');
 document.body.appendChild(html);
 
 var fecha = document.createElement('div');
-fecha.innerHTML = "Actulizado al " + document.lastModified;
+fecha.innerHTML = '<font style="font-size: 12pt" size="3">Actualizado al ' + document.lastModified + '</font>';
 
 document.body.appendChild(fecha);
 });
 </script>
-
-<button onclick="printHTML()">Imprimir</button><script>
-function printHTML() {
-  if (window.print) {
-    window.print();
-  }
-}
-</script>
-
-</body>
