@@ -337,15 +337,15 @@ fecha.innerHTML = '<font style="font-size: 12pt" size="3">Actualizado al ' + doc
 document.body.appendChild(fecha);
 });
 </script>
-
-<?=
+<div id="visitCounter"><?=
 session_start();
 if(!isset($_SESSION['visitas'])){
   $_SESSION['visitas']=0;
   }
 $_SESSION['visitas']++;
 echo "Número de visitas: " . $_SESSION['visitas'];
-?>
+?></div>
+
 
 </body>
 </html>
