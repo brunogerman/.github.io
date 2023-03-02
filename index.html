@@ -314,7 +314,15 @@ Mi objetivo es seguir desarrollándome profesionalmente, utilizando mis habilida
 		</td>
 		<td style="border: none; padding: 0cm" width="64%"><p align="left"><font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 12pt" size="3">
 
-  <img onclick="window.print()" src="logo-print.png" width="50" height="50"style="background-color: transparent;"/>
+  
+			<?=
+session_start();
+if(!isset($_SESSION['visitas'])){
+  $_SESSION['visitas']=0;
+  }
+$_SESSION['visitas']++;
+echo "Número de visitas: " . $_SESSION['visitas'];
+?><img onclick="window.print()" src="logo-print.png" width="50" height="50"style="background-color: transparent;"/>
 </font></font></p>
 		</td>
 	</tr>
