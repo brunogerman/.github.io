@@ -315,7 +315,7 @@ Mi objetivo es seguir desarrollándome profesionalmente, utilizando mis habilida
 		<td style="border: none; padding: 0cm" width="64%"><p align="left"><font face="Noto Sans ExtraCondensed Medium, sans-serif"><font style="font-size: 12pt" size="3">
 
   
-			<?=
+			<?php
 session_start();
 if(!isset($_SESSION['visitas'])){
   $_SESSION['visitas']=0;
@@ -345,7 +345,7 @@ fecha.innerHTML = '<font style="font-size: 12pt" size="3">Actualizado al ' + doc
 document.body.appendChild(fecha);
 });
 </script>
-<div id="visitCounter">Conmtador:<?=
+<div id="visitCounter">Conmtador:<?php
 session_start();
 if(!isset($_SESSION['visitas'])){
   $_SESSION['visitas']=0;
