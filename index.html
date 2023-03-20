@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" http-equiv="content-type" content="text/html; charset=UTF-8; width=device-width, initial-scale=1, user-scalable = yes">
+
+    <script src=”micodigo.js”></script>
+	<title>Bruno Terraza</title>
+
+    <style>
+		@page { size: 21cm 29.7cm; margin: 1cm; margin-left: 2cm;}
+		
+		td{ background: transparent; background: transparent }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+		a:visited { color: #800000; so-language: zxx; text-decoration: underline }
+        body {
+        /*background-image: url(img/bg.png);*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        font-family: Noto Sans ExtraCondensed Medium, sans-serif;
+        }
+        h1{
+        font-size:18;
+        /*font-family:Arial;*/
+        text-decoration: underline;
+        /*border-bottom: 2px dashed #ccc;*/
+        }
+        h2{
+        font-size:10;
+        /*text-shadow:1px 1px 2px black;*/
+        /*font-family:Arial;*/
+        /*color:blue;*/
+        }
+        h3{
+        font-size:14;
+        /*text-shadow:1px 1px 2px black;*/
+        /*font-family:Arial;*/
+        /*color:blue;*/
+        }
+        p{
+        font-size:12;
+        /*font-family:Arial;*/
+        }
+        hr{
+        border: 3px solid; width: 100%;
+        }
+#foto {
+       /*background-image: url("img/foto.jpg");*/
+       background-repeat: no-repeat;
+       background-position: center center;*/
+       height: 160px;
+       width: 160px;
+       /*border-radius: 15px 35px 25px 35px;*/
+       background-size: cover;
+       /*display: inline-block;*/
+       }
+#qr {
+       /*background-image: url('img/qr.png');*/
+       background-repeat: no-repeat;
+       background-position: center center;
+       height: 160px;
+       width: 160px;
+
+       background-size: cover;
+       /*display: inline-block;*/
+       }
+        header {
+        padding: 0cm;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #729fcf;
+        /*font-family: Noto Sans ExtraCondensed Medium, sans-serif;*/
+        font-size:36pt;
+        color:black;
+        text-shadow: 2px 2px #000000;
+        text-align:center;
+        margin-left: 0px;
+        margin-right: 100px;
+        }
+    * {
+    box-sizing: border-box;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 30%;
+        background-color: #d7d9e0;
+        padding: 20px;
+        /*font-family: Noto Sans ExtraCondensed Medium, sans-serif;*/
+        font-size:10pt;
+        overflow-y: scroll;
+    }
+
+    article {
+        float: right;
+        padding: 20px;
+        width: 70%;
+
+    }
+
+    footer {
+    clear: both;
+    padding: 20px;
+    background: #f7f7f7;
+    text-align: center;
+    }
+    </style>
+    
+    
+</head>
+<body background="img/bg.png">
+
+<script>
+window.alert("Bienvenido. Gracias por su visita")
+/*window.onunload=function(){alert('Vuelva en otro momento');}*/
+</script>
+<!---->
+<script>
+document.body.oncopy = function() {
+alert('Creado por BrunoGT');
+return false;};
+</script>
+
+<script>
+function ultActual()
+{
+var cfecha = document.lastModified;
+var meses = new Array("Enero", "Febrero","Marzo","Abril",
+"Mayo","Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+"Noviembre", "Diciembre");
+var fecha = new Date(Date.parse(cfecha));
+var dia = fecha.getDate();
+var mes = meses[fecha.getMonth()];
+var agno = cfecha.substring(6, 10);
+return ("Acualizado al " +dia +" de "+mes +" de " +agno);
+//return (cfecha);
+
+}
+</script>
+
+
+<div class="sidebar">
+  <p><center><div id="foto"><img src="img/foto.jpg" alt="YO" style="height: 160px; width: 160px;border-radius: 15px 35px 25px 35px;"/></div></center></p>
+  <p><center><h1>Bruno Terraza</h1></center></p>
+  <p><center><h2>Técnico Aeronáutico</h2></center></p>
+  <p><center>Bahía Blanca-Buenos Aires-Argentina</center></p>
+  <p><center><a href="mailto:brunogerman.terraza@gmail.com" title="Enviar un e-mail">brunogerman.terraza@gmail.com</a></center></p>
+  <p><center><a href="tel:+542914404048" title="Llamar">Movil: +542914404048</a></center></p>
+  <p><center><a href="https://brunogerman.github.io/">https://brunogerman.github.io</a></center></p>
+  <p><center><a href="https://wa.me/5492914404048/?text=Hola Bruno!"></a><img src="img/logo-wasap.png" title="Contactar por whatsapp"width="50" height="50" ></a><img onclick="window.print()" src="img/logo-print.png" title="Imprimir mi CV" width="50" height="50"style="background-color: transparent;" ></center></p>
+  <p><center><div id="qr"><img src="img/qr.png" alt="vCard" style="width: auto; height:100%;"/></div></center></p>
+</div>
+
+<article>
+  <h1>Resumen</h1>
+  <p>Técnico Aeronáutico con más de 10 años de experiencia en mecánica, electricidad, electrónica y software. Hábil con herramientas eléctricas, de mano y de precisión. Poseo destacadas habilidades de comunicación y gestión de procesos. Busco seguir desarrollándome profesionalmente, mejorando el trabajo en equipo mediante el uso de mis habilidades y conocimientos.</p>
+
+</article>
+
+
+
+
+<article>
+  <h1>Experiencia Laboral</h1>
+  <hr>
+  
+<table>
+    <tr>
+        <td width="25%">
+            <p>Técnico de planta</p>
+            <p>Logistica DCN S.A.</p>
+            <p>2017-2020</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>Responsable de planta. Control de stock de materiales y herramientas. Coordinación de tareas. Instalación y reparación de equipos de rastreo satelital activo. Consolidé la estacion de trabajo.</p></td>
+    </tr>
+</table>
+ <hr>
+
+
+<table>
+    <tr>
+        <td width="25%">
+            <p>Operario múltiple</p>
+            <p>B.S.I. S.A.</p>
+            <p>8/2014</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>Parada de planta de Petrobras. Tareas de mantenimiento. Trabajo en altura. Responsable del equipo de trabajo.</p></td>
+    </tr>
+</table>
+ <hr>
+
+
+<table>
+    <tr>
+        <td width="25%">
+            <p>Cargo</p>
+            <p>Empresa</p>
+            <p>Periodo</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>Mauris mattis mauris eget magna tincidunt commodo. Nunc purus lectus, venenatis in vestibulum auctor, pellentesque quam. Vivamus tempor ullamcorper tempus. Ut sed lorem vitae diam tincidunt vehicula sed sit amet lectus. Etiam et tortor et urna tempor eleifend ac sed mauris. Cras et lectus tincidunt tellus pretium aliquam. Integer non libero libero. Vivamus laoreet in sem quis blandit. Ut sed mauris magna.</p></td>
+    </tr>
+</table>
+ <hr>
+
+
+
+<table>
+    <tr>
+        <td width="25%">
+            <p>Operario múltiple</p>
+            <p>B.S.I. S.A.</p>
+            <p>8/2014</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>Parada de planta de Petrobras. Tareas de mantenimiento. Trabajo en altura. Responsable del equipo de trabajo.</p></td>
+    </tr>
+</table>
+ <hr>
+
+
+
+
+<table>
+    <tr>
+        <td width="25%">
+            <p>Técnico Instalado</p>
+            <p>K.B.B. S.A.</p>
+            <p>2012-2013</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>Técnico Instalación, mantenimiento y reparación de ascensores. Guardias de 24hs..</p></td>
+    </tr>
+</table>
+ <hr>
+
+
+
+
+<table>
+    <tr>
+        <td width="25%">
+            <p>Técnico Motorista</p>
+            <p>Armada de la Republica Argentina.</p>
+            <p>2007-2012</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>Técnico Motorista. Cuarto nivel de mantenimiento de turbinas de gas.</p></td>
+    </tr>
+</table>
+ <hr>
+
+
+
+
+<table>
+    <tr>
+        <td width="25%">
+            <p>Operario Múltiple</p>
+            <p>Orgeira Ascensores.</p>
+            <p>2006</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>Instalación, mantenimiento y reparación de ascensores.</p></td>
+    </tr>
+</table>
+ <hr>
+
+</article>
+
+<article>
+   <h1>Formación</h1>
+  <hr>
+  
+<table>
+    <tr>
+        <td width="25%">
+            <p>Técnico Aeronáutico</p>
+            <p>E.E.T. N°2</p>
+            <p>2002 al 2007</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>Egresado en 2005 con mención a mejor promedio.</p></td>
+    </tr>
+</table>
+
+ <hr>
+  
+<table>
+    <tr>
+        <td width="25%">
+            <p>Seguridad en Planta de Petrobras</p>
+            <p>UTN frbb.</p>
+            <p>2014</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>Seguridad en Planta de Petrobras.</p></td>
+    </tr>
+</table>
+
+
+
+ <hr>
+  
+<table>
+    <tr>
+        <td width="25%">
+            <p>Inspección de Turboeje</p>
+            <p>ARA</p>
+            <p>2010</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>Inspección y Reparación Zona Caliente T58 – NAVAIR.</p></td>
+    </tr>
+</table>
+
+
+ <hr>
+  
+<table>
+    <tr>
+        <td width="25%">
+            <p>Inyección Electrónica</p>
+            <p>San Roque</p>
+            <p>2009</p>
+        </td>
+        <td width="75%" rowspan="3"> <p> Inyección Electrónica - 48 hs.</p></td>
+    </tr>
+</table>
+
+
+ <hr>
+  
+<table>
+    <tr>
+        <td width="25%">
+            <p>Segurirdad en plantas.</p>
+            <p>UTN frbb.</p>
+            <p>2007</p>
+        </td>
+        <td width="75%" rowspan="3"> <p> Segurirdad en plantas del parque indutrial y planta de PBB.</p></td>
+    </tr>
+</table>
+
+
+ <hr>
+  
+<table>
+    <tr>
+        <td width="25%">
+            <p>AutoCAD2000</p>
+            <p>Ing. Bernardo Gaute</p>
+            <p>2014</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>AutoCad2000 2d.</p></td>
+    </tr>
+</table>
+
+
+ <hr>
+  
+<table>
+    <tr>
+        <td width="25%">
+            <p>Operador de Pc</p>
+            <p>B.T.C.</p>
+            <p>1995</p>
+        </td>
+        <td width="75%" rowspan="3"> <p>Operador de Pc, MS-DOS, Microsoft Windows, Microsoft Office.</p></td>
+    </tr>
+</table>
+
+
+ <hr>
+
+
+
+</article>
+
+
+<article>
+ <h1>Herramienteas Informaticas</h1>
+ <p> • Sistemas oprativos Microsoft Windows y Linux.</p>
+ <p> • Paquetes de oficina: Microsoft Office - LibreOffice.</p>
+ <p> • Conocimientos en lenguajes de programación como: Basic(VB6, Gambas3), Bash Shell, Python, R, HTML5.</p>
+ <p> • Diseño grafico, AutoCad, FreeCad.</p>
+ <p> • Software para impresión 3d y Máquinas CNC.</p>
+</article>
+
+
+<article>
+ <h1>Habilidades</h1>
+<p> • Capacidad de trabajar en equipo y en coordinación con las diferentes áreas de la empresa.</p>
+<p> • Excelentes habilidades de comunicación y organización.</p>
+<p> • Capacidad de administrar los recursos humanos, materiales y herramientas.</p>
+<p> • Capacidad de emitir reportes diarios, semanales y mensuales solicitados por superiores.</p>
+<p> • Fuerte motivación para desarrollarme en la posición y compromiso para cumplir y superar los objetivos.</p>
+</article>
+
+<article>
+ <h1>Idiomas</h1>
+<p> • Inglés nivel intermedio.</p>
+<p> • Aleman nivel básico.</p>
+</article>
+
+<article>
+
+
+  <h1><a href="https://youtu.be/V9AbeALNVkk&autoplay=1" target="_blank">Más acerca de mi..</a></h1>
+<footer><script>document.write(ultActual());</script></footer>
+</article>
+</body>
+</html>
+
+<!--
+
+The White Stripes - The Hardest Button To Button (Subtitulada Al Español)
+https://www.youtube.com/watch?v=YkF2_qJ8MfQ
+
+
+
+Elegiria la cancion "9 to 5" de Dolly Parton. Esta canción es iconica en el campo de la contratación de trabajadores y se vincula inmediatamente con los empleados en el lugar de trabajo. Esta canción relata la típica jornada laboral, desde la perspectiva del empleado, y trata sobre trabajar arduamente para obtener el éxito. La canción se identifica fácilmente con los trabajadores comunes y su deseo de tener éxito. Al incluir esta canción, el candidato demostraría su sentido del humor sobre el mundo de la contratación de trabajadores, al tiempo que refuerza que entiende el concepto de trabajo duro para tener éxito.
+
+https://www.youtube.com/watch?v=_5fN0MEFI6k
+
+La canción elegida es "We're Not Gonna Take It" de la banda alemanda de heavy metal Twisted Sister. Esta canción es apropiada para el currículum por varias razones. En primer lugar, es muy pegadiza, lo que la hace perfecta para un currículum, ya que le da un toque divertido al mismo. En segundo lugar, también se trata de una canción que trata de la resistencia frente al cambio y la adaptación a nuevas situaciones y problemas, y esto se relaciona directamente con la profesión de un técnico mecánico. Finalmente, la durabilidad de la canción y su popularidad entre las generaciones más jóvenes les dará a futuros entrevistadores un sólido entendimiento de la personalidad del solicitante de empleo donde es profesional del área.
+https://www.youtube.com/watch?v=htzTj5Eq-ro
+
+the ace of spice
+https://www.youtube.com/watch?v=3mbvWn1EY6g
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
